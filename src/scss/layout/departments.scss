@@ -1,0 +1,46 @@
+
+#departments{
+    background-color: #f7f7f7;
+    min-height: 70vh;
+}
+.departments {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eaeaea;
+    
+}
+.departments-card {
+    max-width: 42%;
+    min-width: 450px;
+    margin-top: 30px;
+    transition: all 0.5s;
+
+		&__img {
+            width: 100%;
+            height: 300px;
+		}
+
+		&__title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #303133;
+            text-transform: uppercase;
+		}
+
+		&__link {
+            text-decoration: none;
+            background-color: $yellow;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 15px 15px;
+            border-radius: 3px;
+            display: inline-block;
+		}
+}

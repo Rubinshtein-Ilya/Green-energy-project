@@ -1,0 +1,91 @@
+
+.contacts-container {
+    background-color: white;
+    background-image: url("../images/contactimg.webp");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+
+		&__item {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 2;
+		}
+
+		&__link {
+            text-decoration: none;
+            color: #333;
+		}
+}
+
+
+.send-message {
+    max-width: 35%;
+
+
+		&__form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+		}
+
+		&__item {
+            width: 40%;
+            padding: 10px 20px;
+            border: 1px solid black;
+		}
+
+		&__text {
+            width: 100%;
+            padding-top: 10px;
+            padding-left: 20px;
+            margin-top: 20px;
+		}
+
+		&__btn {
+            margin-top: 20px;
+            background-color: $yellow;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 15px 15px;
+            border-radius: 3px;
+            border: none;
+            transition: all 0.5s;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $hoverColor;
+            }
+		}
+}
+
+.invalid {
+    box-shadow: 2px 2px 10px red;
+}
+
+.form-message{
+    position: absolute;
+    background-color: red;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 30px;
+    font-size: 20px;
+    width: 20%;
+    opacity: 0;
+    transition: all 0.5s;
+}

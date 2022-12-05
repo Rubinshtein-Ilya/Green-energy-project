@@ -1,0 +1,117 @@
+
+@media only screen and (max-width: 1210px){
+    html{
+        overflow-x: hidden;
+    }
+    .header__title{
+        font-size: 4vw;
+    }
+    .header__subtitle{
+        font-size: 3vw;
+    }
+    .contacts-container{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .send-message{
+        max-width: 50%;
+    }
+    .send-message__item{
+        margin-top: 25px;
+    }
+    .contacts-info{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1125px){
+    .departments-card{
+        max-width: 30%;
+        min-width: 300px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 860px) {
+    .links{
+        height: 100%;
+        width: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        margin-right: 0;
+
+        &__item{
+            color: antiquewhite;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    }
+    .nav__btn{
+        display: block;
+        margin-right: 60px;
+    }
+    .nav__closebtn{
+        display: none;
+        position: absolute;
+        top: 9%;
+        right: 10%;
+        color: antiquewhite;
+        z-index: 3;
+        text-decoration: none;
+        font-size: 45px;
+    }
+    .responsive{
+        width: 100%;
+    }
+    .btn-none{
+        display: none;
+    }
+    .btn-block{
+        display: block;
+    }
+    .contacts-container{
+        background-image: none;
+    }
+    .send-message__item{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 752px){
+    .servises, .departments{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .title, .hidden-elem__title{
+        font-size: 4vw;
+    }
+    .projects-list, .hidden-elem__list, .hidden-elem__subtitle{
+        font-size: 3vw;
+    }
+    .departments-card, .servises-card{
+        width: 80vw;
+        min-width: 80vw;
+    }
+    .servises-card__img, .departments-card__img{
+        width: 100%;
+        height: 100%;
+    }
+    .servises-card__title, .departments-card__title, .contacts-info__item{
+        font-size: 3vw;
+    }
+    .departments-card__link, .servises-card__link, .send-message__btn, .hidden-elem__servises-link{
+        font-size: 2vw;
+    }
+}
